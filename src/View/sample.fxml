@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="527.0" maxWidth="900.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="900.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SampleController">
+   <children>
+      <AnchorPane layoutY="115.0" prefHeight="412.0" prefWidth="900.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="login_field" layoutX="264.0" layoutY="101.0" prefHeight="40.0" prefWidth="346.0" promptText="Логин:" style="-fx-border-radius: 15;">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </TextField>
+            <Button fx:id="signIn_button" layoutX="355.0" layoutY="293.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="152.0" style="-fx-background-color: #DAA520; -fx-background-radius: 15;" text="Войти">
+               <font>
+                  <Font name="Century Gothic Bold" size="23.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutY="377.0" prefHeight="35.0" prefWidth="900.0" style="-fx-background-color: #2E3348;">
+               <children>
+                  <Label layoutX="740.0" layoutY="6.0" prefHeight="23.0" prefWidth="152.0" text="© Гусаров Сергей " textAlignment="CENTER" textFill="DODGERBLUE">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <PasswordField fx:id="password_field" layoutX="264.0" layoutY="170.0" prefHeight="40.0" prefWidth="346.0" promptText="Пароль:" style="-fx-border-radius: 15;">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="313.0" layoutY="17.0" prefHeight="69.0" prefWidth="275.0" text="Авторизация:" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="35.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="298.0" fitWidth="228.0" layoutX="661.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/interfase1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="277.0" fitWidth="163.0" layoutX="51.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/interfase2.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="checkbox" layoutX="354.0" layoutY="220.0" mnemonicParsing="false" opacity="0.7" selected="true" text="Запомнить меня">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="login_button" layoutX="680.0" layoutY="33.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="206.0" style="-fx-background-color: #DAA520; -fx-background-radius: 15;" text="Зарегистрироваться">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="12.0" layoutY="67.0" prefHeight="51.0" prefWidth="327.0" text="«your life – your device»" textAlignment="CENTER" textFill="DODGERBLUE">
+         <font>
+            <Font name="Century Gothic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="16.0" prefHeight="69.0" prefWidth="752.0" text="Energy Resource Management " textAlignment="CENTER" textFill="DODGERBLUE">
+         <font>
+            <Font name="Century Gothic Bold" size="40.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menu" layoutY="-3.0" opacity="0.73" prefHeight="23.0" prefWidth="900.0" style="-fx-background-color: white;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

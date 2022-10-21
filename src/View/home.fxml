@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="900.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <children>
+      <Button fx:id="user_button" layoutX="568.0" layoutY="35.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="121.0" style="-fx-background-color: #FFDEAD; -fx-background-radius: 15;" text="Настройки">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="177.0" layoutY="106.0" prefHeight="46.0" prefWidth="121.0" text="id: 336514" textAlignment="CENTER" textFill="#1f93ff">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="61.0" prefHeight="46.0" prefWidth="201.0" text="(Гусаров Сергей)" textAlignment="CENTER" textFill="#1f93ff">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="21.0" prefHeight="69.0" prefWidth="173.0" text="SERJK" textAlignment="CENTER" textFill="DODGERBLUE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="99.0" fitWidth="165.0" layoutX="10.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="leave_button" layoutX="696.0" layoutY="35.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="190.0" style="-fx-background-color: #DAA520; -fx-background-radius: 15;" text="Покинуть аккаунт">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Button>
+      <MenuBar fx:id="menu" opacity="0.73" prefHeight="23.0" prefWidth="900.0" style="-fx-background-color: white;">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane layoutY="148.0" prefHeight="345.0" prefWidth="902.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="432.0" layoutY="-4.0" prefHeight="267.0" prefWidth="470.0" style="-fx-border-color: #2E3348; -fx-background-color: white;" />
+            <AnchorPane layoutX="-1.0" layoutY="-4.0" prefHeight="267.0" prefWidth="434.0" style="-fx-border-color: #2E3348; -fx-background-color: white;">
+               <children>
+                  <Label layoutX="42.0" layoutY="-13.0" prefHeight="69.0" prefWidth="381.0" text="Текущий расход электроэнергии:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Century Gothic Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="99.0" layoutY="29.0" prefHeight="49.0" prefWidth="228.0" text="187,426 кВ/час" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="30.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-2.0" layoutY="157.0" prefHeight="106.0" prefWidth="908.0" style="-fx-border-color: #2E3348;">
+               <children>
+                  <Label layoutX="452.0" layoutY="4.0" prefHeight="69.0" prefWidth="312.0" text="Аварийное отключение" textAlignment="CENTER">
+                     <font>
+                        <Font name="Century Gothic Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="452.0" layoutY="29.0" prefHeight="69.0" prefWidth="312.0" text="всей техники:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Century Gothic Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="worry_button" layoutX="786.0" layoutY="24.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="81.0" style="-fx-background-color: #DAA520; -fx-background-radius: 15;" text="OFF">
+                     <font>
+                        <Font name="Century Gothic Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="79.0" layoutY="-16.0" prefHeight="69.0" prefWidth="312.0" text="Управление освещением:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Century Gothic Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="lightSlider" blockIncrement="5.0" layoutX="165.0" layoutY="49.0" majorTickUnit="100.0" minorTickCount="0" prefHeight="23.0" prefWidth="129.0" scaleX="3.0" scaleY="3.0" scaleZ="3.0" value="35.0" />
+                  <Label fx:id="infoLabel" layoutX="232.0" layoutY="72.0" prefHeight="29.0" prefWidth="207.0" text="Свет выставлен на: 35%" textAlignment="CENTER">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="21.0" layoutY="58.0" prefHeight="69.0" prefWidth="417.0" text="Оплата, по установленному тарифу:" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="104.0" prefHeight="49.0" prefWidth="228.0" text="713,109 рублей" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="448.0" layoutY="-15.0" prefHeight="69.0" prefWidth="268.0" text="Управление приборами:" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="check_1" layoutX="449.0" layoutY="42.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" selected="true" text="холодильник">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check_2" layoutX="449.0" layoutY="75.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="162.0" text="микроволновка">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check_3" layoutX="449.0" layoutY="111.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="207.0" selected="true" text="стиральная машина">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check_8" layoutX="810.0" layoutY="76.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="81.0" text="утюг">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check_6" layoutX="657.0" layoutY="111.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="162.0" text="чайник">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check_5" layoutX="657.0" layoutY="75.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" selected="true" text="телевизор">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check_9" layoutX="810.0" layoutY="112.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" selected="true" text="плита">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check_7" layoutX="810.0" layoutY="43.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="69.0" selected="true" text="ПК">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check_4" layoutX="657.0" layoutY="41.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="162.0" text="кондиционер">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="static_button" layoutX="737.0" layoutY="284.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" style="-fx-background-color: #DAA520; -fx-background-radius: 15;" text="развернуть">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="18.0" layoutY="267.0" prefHeight="69.0" prefWidth="728.0" text="Просмотр последней сохранённой статистики энергопотребления:" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="734.0" layoutY="498.0" prefHeight="23.0" prefWidth="152.0" text="© Гусаров Сергей " textAlignment="CENTER" textFill="DODGERBLUE">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
